@@ -1,0 +1,96 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<link rel="stylesheet" href="surveycss.css">
+<html>
+
+<body>
+
+    <body ::before></body>
+
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">My First Survey form</h1>
+                <p id="description" class="description text-center" ”>Thank you for taking time to help me improve my
+                    skills</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">
+                        Name
+                    </label>
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name"
+                        required="">
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">
+                        Email
+                    </label>
+                    <input id="email" class="form-control" type="email" name="email" placeholder="Enter your e-mail"
+                        required="">
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">
+                        Age
+                        <span class="clue">(optional)</span>
+                    </label>
+                    <input id="number" class="form-control" type="number" name="age" min="10" max="99"
+                        placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p>
+                    <select id="dropdown" class="form-control" name="role" required="">
+                        <option disabled="" selected="" value="">Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full time learner</option>
+                        <option value="perferNo">Prefer not to say</option>
+                        <option value="other">Other</other>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Should I create more surveys?</p>
+                    <label>
+                        <input class="input-radio" name="user-recommend" value="sure" type="radio" checked="">
+                        Sure
+                        </lable>
+                        <label>
+                            <input class="input-radio" name="user-recommend" value="I-don't-know" type="radio">
+                            I don’t know
+                        </label>
+                        <label>
+                            <input class="input-radio" name="user-recommend" value="hell-no" type="radio">
+                            Hell no!
+                        </label>
+                </div>
+                <div class="form-group">
+                    <p>What would you like to see improved?
+                        <span class=”clue”>(check all that apply)</span>
+                    </p>
+                    <label>
+                        <input class="input-checkbox" name="prefer" value="better-colors" type="checkbox">
+                        Better colors
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="prefer" value="animations" type="checkbox">Animations
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="prefer" value="different-fonts" type="checkbox"> Different
+                        Fonts
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="prerfer" value="more-options" type="checkbox"> More options
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit" class="submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
